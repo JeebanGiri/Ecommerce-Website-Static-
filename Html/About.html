@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce site/Best for Buying Books">
+    <meta http-equiv="Referesh" content="4">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../Css/About.css">
+    <style>
+        .header img {
+            margin: -8px 0px -8px 65px;
+        }
+        .customer-pic img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .next img {
+            height: 25px;
+            width: 25px;
+        }
+
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            /* background-color: #fefefe; */
+            background-color: lightslategray;
+            margin: auto;
+            /* padding: 20px; */
+            border: 1px solid #888;
+            /* width: 56%; */
+            height: 600px;
+            width: 800px;
+            margin-top: -50px;
+
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+
+        /* css of Buy now */
+        body {
+            background-color: #ebf3fc;
+            font-family: sans-serif;
+        }
+
+        .book-img img {
+            margin: 20px 20px 0px 50px;
+            height: 70px;
+            width: 70px;
+        }
+
+        #formcontent {
+            /* styling formcontent  */
+            background-color: lightslategray;
+            height: 650px;
+            width: 800px;
+            border-radius: 10px;
+        }
+
+        .form {
+            /* styling form class */
+            background-color: lightslategray;
+            display: flex;
+        }
+
+        #formcontent h2 {
+            /* styling formcontent element */
+            margin-top: -10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 80px;
+        }
+
+        .head1 {
+            /* styling head1 class */
+            margin-left: 70px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .head1 input {
+            /* styling head1 input */
+            height: 35px;
+            width: 300px;
+            padding-left: 20px;
+            margin-top: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .head2 {
+            /* styling head2 */
+            margin-left: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .head2 input {
+            /* styling head2 input */
+            height: 35px;
+            width: 300px;
+            padding-left: 20px;
+            margin-top: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .head2 textarea {
+            /* styling head2 textarea */
+            margin-top: 5px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .head2 p {
+            /* styling head2 class element */
+            margin-top: 4px;
+            margin-bottom: -5px;
+            margin-left: 0px;
+        }
+
+        #formcontent button {
+            /* styling formcontent element  */
+            height: 40px;
+            width: 120px;
+            background-color: #319be7;
+            border: 1px solid #319be7;
+            border-radius: 5px;
+            font-size: 20px;
+            margin: 50px 340px;
+            cursor: pointer;
+        }
+
+        #formcontent button:hover {
+            /* use hover on formcontent button */
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="/Images/Book.png" alt="Book">
+        <nav>
+            <ul>
+                <li> <a href="E-commerce.html">HOME</a></li>
+                <li> <a href="E-commerce.html">BLOG</a></li>
+                <li> <a href="E-commerce.html">RESEARCH</a></li>
+                <li> <a href="E-commerce.html">PRODUCT</a></li>
+                <li> <a href="E-commerce.html">CONTACT US</a></li>
+                <li> <a href="About.html">ABOUT US</a></li>
+                <li><button id="myBtn">Order Now</button></li>
+                <li><button style=" height: 37px; width: 100px; background-color: #319be7 ; border-radius: 5px; border:2px solid #319be7; 
+                        margin-top: -10px; margin-left: 5px;"><a href="Login.html">Login</a> </button> </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="About-us">
+        <div class="com-details">
+            <h2>Company Overview</h2>
+            <h1>10 000+</h1>
+            <p>satisfied customers</p>
+        </div>
+        <div class="customer-pic">
+            <img src="/Images/About.png" alt="About">
+        </div>
+    </div>
+    <div class="About-Next">
+
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>Our goal is to provide high-quality, low-cost books for education, pleasure, self-development, and
+                self-fulfillment to anyone who needs them, whenever the need arises, by offering a diverse selection of
+                books to meet our customers' needs, exceeding our clients' expectations for book needs, and increasing
+                the marketability of our books.</p>
+        </div>
+        <div class="vision">
+            <h2>Vision</h2>
+            <p>Our goal is to become Nepal's largest and most well-known book distributor, as well as a household name
+                in the Nepal subregion. Imagine Book Services is dedicated to seeing Nepal's book industry thrive. We
+                plan to do so by opening more bookstores in other East Asian nations. </p>
+        </div>
+    </div>
+    <div class="Last">
+        <div class="prev">
+            <h3>About Us</h3>
+            <p>Imagine Bookstore will starts to highlights digital innovation in the fast growing industry of
+                ecommerce. </p>
+        </div>
+        <div class="play-pause">
+            <h3>What we are Building</h3>
+            <p>> zero-party data platform for shopify stores in nepal
+                <span style="color: #0773b6;">(Octane AI)</span>
+            </p>
+        </div>
+        <div class="next">
+            <h3><a href="#Contact"><h3>Contact Us</h3></a> </h3>
+            <p>
+                <img src="/Images/message.png" alt="message logo"><span style="color: white; font-size: 16px; margin-left: 10px;">Send us a message</span><br>
+                <img src="/Images/call.png" alt="call logo"> <span  style="color: white; font-size: 16px; margin-left: 10px;">+9779823781234</span>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright 2022 &copy; @imagine-bookstore.com</p>
+    </div>
+            <script>
+                function Submit() {
+                    alert("Thank you for ordering with us");
+                    window.location.href = "E-commerce.html";
+                }
+            </script>
+        </div>
+    </div>
+    <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+
+    <form>
+        <div id="formcontent">
+            <div class="book-img">
+                <img src="/Images/logo2.png" alt="Logo of book">
+            </div>
+            <h2>Please Send Us Your Details</h2>
+            <div class="form">
+                <div class="head1">
+                    First Name: <br>
+                    <input type="text" placeholder="First Name" id="Fname" class="Name"><br><br>
+                    Last Name: <br>
+                    <input type="text" placeholder="Last Name" id="Lname" class="Name"> <br><br>
+                    Contact No: <br>
+                    <input type="text" placeholder="Contact number" id="number" class="Numbers"><br><br>
+                    Debit and Credit Card: <br>
+                    <input type="text" placeholder="Card Number" id="Card" class="card num"><br><br>
+
+                </div>
+                <div class="head2">
+                    E-mail: <br>
+                    <input type="text" placeholder="E-mail" id="Email"><br><br>
+                    Address: <br>
+                    <input type="text" placeholder="Enter your Address" id="Address"> <br><br>
+                    <p>Pieces of Books: 
+                    </p> 
+                    <input type="number" name="Number" id="no of books"><br><br>
+                    <span>Message:</span>   <br>
+                    <textarea name="message from user" placeholder="Enter your message" id="message" cols="32"
+                        rows="3"></textarea>
+                </div>
+            </div>
+            <button onclick="Submit()">Submit</button>
+        </div>
+    </form>
+  </div>
+
+</div>
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* external css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    background-color: #ebf3fc;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    display:flex ;
+    background-color: rgb(204, 201, 201);
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    margin-top: -100px;
+    
+}
+.header ul{
+    display: flex;
+    margin-left: 250px;
+    padding-top: 23px;
+     
+}
+.header li{
+    list-style: none;
+    padding: 0px 25px;
+}
+a{
+    text-decoration: none;
+    color: #2f2b2b;
+    font-size: 14px;
+}
+a:hover{
+    color: white;
+}
+nav li button{
+    height: 37px;
+    width: 100px;
+    background-color: #319be7;
+    border-radius: 5px;
+    border: 1px solid #319be7; 
+    margin-top: -10px;
+    cursor: pointer;
+    margin-left: 0px;
+}
+.com-details{
+     height: 400px;
+    width: 400px; 
+     margin-top: 150px; 
+    margin-left: 200px; 
+}
+.com-details h2{
+    font-size: 40px;
+    color: aqua;
+}
+.com-details h1{
+    font-size: 70px;
+    margin-top: 30px;
+    color: #319be7;
+}
+.com-details p{
+    font-size: 30px;
+    font-weight: bold;
+    color: lightgreen;
+}
+.customer-pic{
+     height: 400px;
+    width: 400px; 
+     margin-left: 300px; 
+      margin-top: 100px;  
+     
+}
+.About-us{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-color: white;
+    margin-top: 100px;
+    
+}
+.mission{
+    height: 220px;
+    width: 600px;
+    background-color: yellow;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+    text-align: justify;
+    padding: 10px 15px 10px 20px;
+} 
+.vision{
+    height: 220px;
+    width: 600px;
+    background-color: yellow;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 90px;
+    padding: 10px 15px 10px 20px;
+    margin-right: 50px;
+    text-align: justify;
+}
+ .About-Next{
+    display: flex;
+    height: 270px;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    background-color: white;
+    }
+    .mission h2{
+        margin-bottom: 20px;
+    }
+    .vision h2{
+        margin-bottom: 20px;
+    }
+    .Last{
+        display: flex;
+        background-color: #153d3d;
+        width: 100%;
+        color: white;
+    
+    }
+    .prev{
+        margin-top: 20px;
+        height: 100px;
+        width: 450px;
+        margin-left: 150px;
+    }
+    .prev p{
+        margin-top: 10px;
+    }
+    .play-pause{
+        margin-top: 20px;
+        height: 100px;
+        width: 450px;
+        margin-left: 60px;
+    }
+    .play-pause p{
+        margin-top: 10px;
+    }
+    .next{
+        margin-top: 20px;
+        height: 200px;
+        width: 300px;
+        margin-left: 60px;
+    }
+    .next h3{
+        color: white;
+    }
+    .next p{
+        margin-top: 10px ;
+    }
+    .footer {
+        text-align: center;
+        background-color: #5f5858;
+        color: white;
+        width: 100%;
+        padding: 20px;
+    }
+
+
+
+
+

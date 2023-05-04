@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce site/">
+    <meta http-equiv="Referesh" content="4">
+    <title>Book store</title>
+     <!-- External css -->
+    <link rel="stylesheet" href="../Css/style.css">
+    <style>
+        /* internal css */
+        .header img {
+            margin: -8px 0px -8px 65px;
+        }
+
+        .figure img {
+            height: 60vh;
+            margin-top: 158px;
+            margin-left: -12%;
+        }
+
+        .image-tech img {
+            height: 500px;
+            width: 500px;
+            margin-left: 100px;
+
+        }
+
+        .ecommerce img {
+            height: 300px;
+            margin-left: 55%;
+            margin-top: -30px;
+            margin-right: 125px;
+            width: 500px;
+        }
+
+        .site1 img {
+            height: 250px;
+            width: 450px;
+            margin-left: 100px;
+        }
+
+        .site2 img {
+            height: 250px;
+            width: 450px;
+            margin-left: 910px;
+            margin-top: 40px;
+        }
+
+        .site3 img {
+            height: 250px;
+            width: 450px;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+
+        .site4 img {
+            height: 250px;
+            width: 450px;
+            margin-left: 910px;
+            margin-top: 40px;
+        }
+
+        .site5 img {
+            height: 250px;
+            width: 450px;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        .figure1 img {
+            height: 250px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        .figure2 img {
+            height: 250px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        .figure3 img {
+            height: 250px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        .figure4 img {
+            height: 250px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        .figure5 img {
+            height: 250px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        .figure6 img {
+            height: 250px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        .figure7 img {
+            height: 250px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        .figure8 img {
+            height: 250px;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        .item1 img {
+            height: 40px;
+            width: 40px;
+            margin-left: 100px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .item2 img {
+            height: 40px;
+            width: 40px;
+            margin-left: 100px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .item3 img {
+            height: 40px;
+            width: 40px;
+            margin-left: 100px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .side1 img {
+            height: 40px;
+
+        }
+
+        .side3 img {
+            height: 30px;
+            width: 80px;
+        }
+
+        .next img {
+            height: 25px;
+            width: 25px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            /* background-color: #fefefe; */
+            background-color: lightslategray;
+            margin: auto;
+            /* padding: 20px; */
+            border: 1px solid #888;
+            /* width: 56%; */
+            height: 600px;
+            width: 800px;
+            margin-top: -50px;
+
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+
+        /* css of Buy now */
+        body {
+            background-color: #ebf3fc;
+            font-family: sans-serif;
+        }
+
+        .book-img img {
+            /* styling on book-img img class */
+            margin: 20px 20px 0px 50px;
+            height: 70px;
+            width: 70px;
+        }
+
+        .formcontent {
+            /* styling formcontent  */
+            background-color: lightslategray;
+            height: 400px;
+            width: 800px;
+            border-radius: 10px;
+        }
+
+        .form {
+            /* styling form class */
+            background-color: lightslategray;
+            display: flex;
+        }
+
+        .formcontent h2 {
+               /* styling formcontent element */
+            margin-top: 40px;
+            margin-bottom: 50px;
+            margin-left: 80px;
+
+        }
+
+        .head1 {
+             /* styling head1 class */
+            margin-left: 70px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .head1 input {
+              /* styling head1 input */
+            height: 35px;
+            width: 300px;
+            padding-left: 20px;
+            margin-top: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .head2 {
+             /* styling head2 */
+            margin-left: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .head2 input {
+                 /* styling head2 input */
+            height: 35px;
+            width: 300px;
+            padding-left: 20px;
+            margin-top: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .head2 textarea {
+              /* styling head2 textarea */
+            margin-top: 5px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .head2 p {
+            /* styling head2 class element */
+            margin-top: 4px;
+            margin-bottom: -5px;
+            margin-left: 0px;
+        }
+
+        .formcontent button {
+               /* styling formcontent element  */
+            height: 40px;
+            width: 120px;
+            background-color: #319be7;
+            border: 1px solid #319be7;
+            border-radius: 5px;
+            font-size: 20px;
+            margin: 50px 340px;
+            cursor: pointer;
+        }
+
+        .formcontent button:hover {
+              /* use hover on formcontent button */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="/Images/Book.png" alt="Book">
+        <!-- navigation start -->
+        <nav>
+            <ul>
+                <li> <a href="#Home">HOME</a></li>
+                <li> <a href="#Blog">BLOG</a></li>
+                <li> <a href="#Research">RESEARCH</a></li>
+                <li> <a href="#Product">PRODUCT</a></li>
+                <li> <a href="#Contact">CONTACT US</a></li>
+                <li> <a href="About.html">ABOUT US</a></li>
+                <li><button class="myBtn">Order Now</button></li>
+                <li><button style=" height: 37px; width: 100px; background-color: #319be7 ; border-radius: 5px; border:2px solid #319be7; 
+                        margin-top: -10px; margin-left: 5px;"><a href="Login.html">Login</a> </button> </li>
+            </ul>
+        </nav>
+        <!-- end navigation -->
+    </div>
+    <div id="Home">
+        <!-- home page starts -->
+        <div class="slogan">
+            <h2>Welcome To Imagine Bookstore</h2>
+            <p>Come for the book, <br>
+                leave with the knowledge</p>
+            <button>
+                <p style=" margin-top: 7px;"> <a href="#Product">Shop Now!</a> </p>
+            </button>
+        </div>
+        <div class="figure">
+            <img src="/Images/Homepage.png" alt="home">
+        </div>
+
+    </div>
+    <!-- Home page ends -->
+
+    <div id="Blog">
+        <!-- Blog page starts -->
+        <!-- use inline css -->
+        <h1 style="margin-left: 200px; margin-top: 130px; color: rgb(105, 173, 173);">BLOG</h1>
+        <h1>How technology affects?</h1>
+        <div class="flextop">
+            <div class="image-tech">
+                <img src="/Images/technology.png" alt="Tech-Image">
+            </div>
+            <div class="content1">
+                <p>
+                    Technology can plays a vital role in human life.Today world, technology is
+                    helping customers keep track of their purchases, and altering the ways in which those consumers
+                    interact with online
+                    retailers. These developments, in turn, have an impact on the wider picture: New opportunities for
+                    both sides
+                    of the sphere are emerging as technology changes business-to-consumer transactions. Fundamentally,
+                    e-commerce promotes the flow of commodities from suppliers to customers. The social and economic
+                    influence of e-Commerce on society, as well as the major benefits and drawbacks, are discussed
+                    here.The influenc of e commerce on productivity and inflation will be the most significant way in
+                    which it will affect
+                    the economy in general.
+                </p>
+            </div>
+        </div>
+        <div class="content2">
+            <p>
+                By accelerating the speed of time, technology has altered our lives. We were human beings. We
+                invented
+                and developed the technologies that allowed us to improve our lives. Now that technology is
+                transforming
+                our lives on a daily basis, it is difficult to keep up. In today, the all other online
+                e-Commerce
+                site
+                use this online business to provide sevice to the consumer and for generating income. However,
+                if it hadn't been for technology, the emergence of e-commerce would never have happened.
+                Even today, technology is at the heart of the growing e-commerce trend.
+                And, as technology progresses, the options available to both consumers and retailers improve.
+                Different payment choices, easier digital file sales, chat boxes, social shopping, push
+                notifications and applications, and so on are five ways technology is altering e-commerce.
+            </p>
+        </div>
+        <h2>How Do Ecommerce Websites Work</h2>
+        <div class="ecommerce">
+            <div class="image">
+                <img src="/Images/Ecommerce.jpeg" alt="Ecommerce">
+            </div>
+            <div class="container">
+                <p class="content3">E-Commerce, standing for electronic commerce, is the process of customers
+                    shopping
+                    online and processing their payment. An eCommerce website allows visitors to find their
+                    product(s), add
+                    them to
+                    their “cart,” and securely enter their payment information to complete their purchase. Every
+                    industry
+                    has its own set of e-Commerce websites.
+                    Retail sales are the most common, but there are many more, such as auction websites,
+                    business-to-business services, music portals, consulting websites, finance management
+                    websites,
+                    and so on.
+                    Dedicated developers or a website design company can help you create such websites. The
+                    fundamental procedure of an e-commerce website is that a potential customer adds a product
+                    or service to their virtual shopping cart and decides to check out after browsing the
+                    website.
+                    The shopper finishes the checkout process and completes the purchase.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Blog page end -->
+        <div id="Research">
+            <!-- start research page -->
+            <!-- use inline css -->
+            <h2 style="margin-left: 150px; margin-top: 100px; margin-bottom: 50px; color: rgb(105, 173, 173);">RESEARCH
+                </h1>
+                <div class="site1">
+                    <img src="/Images/figure1.png" alt="HomePage naviagiation site">
+                    <p class="first">I'm using the navigation bar from this website, which is similar to mine.
+                        This website's navigation bar, in my opinion, is the greatest for me to display it here.
+                        The navigation bar is permanently positioned at the top of the webpages. As a result, it is
+                        unable to move from the top. In addition, I created a nav bar with a
+                        link-related kind rather than a button-related one. The navigation bar background color is white
+                        in this website but the navigation bar of my website is lightgrey. Those website navigation bars
+                        that I
+                        described earlier can be found here.<a href="https://www.techasoft.com"> <span>Click
+                                here>></span> </a></p>
+                </div>
+                <div class="site2">
+                    <img src="/Images/figure2.png" alt="Books for product page">
+                    <p class="second">I'm using the list of Books from this website, which is in the product
+                        page of my webpage. This website's Books, in my opinion, is the greatest for me to display it
+                        here. in this website the selling books are in vertical but in my web pages I make it in a
+                        horizantal.
+                        This website's book list is available on my product page. Some of the book photographs
+                        on my website which was taken from this sites, while others were taken from other
+                        sources. Here is a link of the website that lists books, their prices, where to buy
+                        them, and a brief summary of the book.Those previously mentioned website pages can be
+                        accessed here. <a href="https://www.cloudways.com/blog/best-ecommerce-books"><span>Click
+                                here>></span> </a>
+                    </p>
+                </div>
+                <div class="site3">
+                    <img src="/Images/figure3.png" alt="denote overall content of the webpage">
+                    <p>I use this website to write content for my webpages that is similar to what is on this website.
+                        That website template's content is identical to that of this website. However, the stuff that I
+                        have published in my webpages is unique. Every website has a little something to make it more
+                        lively and attractive. I've included additional stuff here as well, in order to make my website
+                        more interactive. In this website pages the overall content are in one paragraph and it covers
+                        all the pages but in my webpage I had arrange in one by one, at one side figure and another side
+                        is content. Here you can find a link to navigate through this website and
+                        view the stuff
+                        that is presented there. <a href="https://consulterce.com/best-ecommerce-books"><span>Click
+                                here>></span></a>
+                    </p>
+                </div>
+                <div class="site4">
+                    <img src="/Images/figure4.png" alt="denote contact page">
+                    <p>The primary goal of using this website is to develop a Contact page. This website's contact page
+                        is more appealing than others. As a result, I included it in my website. The contact page
+                        contains all of the website's information as well as any information provided by the user. In
+                        the contact page, I included all of the information about this ecommerce website. The key
+                        benefit of incorporating a contact page in an ecommerce website is that the user/customer may
+                        quickly find their desired goods by filling out the form. You'll discover a link here that will
+                        allow you to explore through this website and see what's on there.
+                        <a href="https://custom-writing.org/"><span>Click here>></span></a>
+                    </p>
+                </div>
+                <div class="site5">
+                    <img src="/Images/figure5.png" alt="denote footer section">
+                    <p>The footer page contains the details of some vital information from the webpage, which is located
+                        on the button, and it appears to be creative on this website. The name of that website, as well
+                        as a small image of that website, are listed here, along with a link to that website. This
+                        website's footer area is the greatest I've seen thus far. The footer area, in my opinion, adds
+                        to the beauty of our website. The footer background color and content of this websiter is quite
+                        different to each other. Here you can find a link to navigate through this website and view
+                        the stuff
+                        that is presented there. <a href="https://custom-writing.org/"><span>Click here>></span></a></p>
+                </div>
+                <div class="aside">
+                    <h3>Visit on other site to explore new things</h3><br>
+                    <p class="site"> <a href="https://www.thebalancesmb.com/best-e-commerce-books-1141449">WWW.Small
+                            Business.Com</a>
+                    </p><br>
+                    <p class="site"> <a href="https://www.bookweb.org/eCommerce">WWW.Bookweb.Org</a></p><br>
+                    <p class="site"> <a href="https://consulterce.com/best-ecommerce-books">WWW.Consulterce.Com</a></p>
+
+                </div>
+        </div>
+        <!-- end research page -->
+        <div id="Product">
+            <!-- product page start -->
+            <!-- use inline css -->
+            <h1 style="margin-left: 200px; margin-top: 270px; color: rgb(105, 173, 173);">PRODUCT</h1>
+            <h1>The Best E-commerce Book For You To Build Your Career </h1>
+            <div class="Firstline">
+
+                <div class="box1">
+                    <div class="title1">
+                        <h4>Best on Learning: Learning 2022</h4>
+                        <hr>
+                    </div>
+                    <div class="figure1">
+                        <img src="/Images/Book1.jpg" alt="Book1">
+                        <hr>
+                        <p>Principles Of Programming Language Book: Concept, Introduction, History Of Programming
+                            Language, Feature and so on. <br>
+                            > Devendre Kr. Sharma
+                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3><button class="myBtn" onclick=""> Buy Now</button></h3>
+                                </td>
+                                <td> <span style="color: black; margin-left: 50px;">Price: $23</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="title2">
+                        <h4>Best on Learning: Learning 2022</h4>
+                        <hr>
+                    </div>
+                    <div class="figure2">
+                        <img src="/Images/Book2.jpg" alt="Book 2">
+                        <hr>
+                        <p>C Programming: Language: A Step by Step Beginner's Guide to Learn C Programming in 7 Days
+                            and the format in Kindle Edition <br>
+                            > Darrel L. Graham
+                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3><button class="myBtn">Buy Now</button></h3>
+                                </td>
+                                <td> <span style="color: black; margin-left: 50px;">Price: $30</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="title3">
+                        <h4>Best on SEO: SEO 2022</h4>
+                        <hr>
+                    </div>
+                    <div class="figure3">
+                        <img src="/Images/Book3.jpg" alt="Book 3">
+                        <hr>
+                        <p>SEO 2022: Learn search engine optimization with clever internet marketing strategies is a
+                            must-read for everyone interested in learning how SEO works.
+                            > Adam Clarke
+                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3><button class="myBtn"> Buy Now</button></h3>
+                                </td>
+                                <td><span style="color: black; margin-left: 50px;">Price: $25</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="box4">
+                    <div class="title4">
+                        <h4>Best on Web Design: HTML and CSS</h4>
+                        <hr>
+                    </div>
+
+                    <div class="figure4">
+                        <img src="/Images/Book4.png" alt="Book4">
+                        <hr>
+                        <p>
+                            Responsive Web Design with HTML5 and CSS : Develop future-proof responsive websites using
+                            the latest HTML5 and CSS techniques. <br>
+                            > Ben Frain
+                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3><button class="myBtn">Buy Now</button></h3>
+                                </td>
+                                <td><span style="color: black; margin-left: 50px;">Price: $35</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="Secondline">
+                <div class="box5">
+                    <div class="title5">
+                        <h4>Best on Machine Learning: Python</h4>
+                        <hr>
+                    </div>
+                    <div class="figure5">
+                        <img src="/Images/Book5.png" alt="Book4">
+                        <hr>
+                        <p>Machine Learning with Python for Everyone (Addison-Wesley Data & Analytics Series) 1st
+                            Edition <br><br>
+                            > Mark Fenner
+                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3><button class="myBtn">Buy Now</button></h3>
+                                </td>
+                                <td><span style="color: black; margin-left: 50px;">Price: $35</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="box6">
+                    <div class="title6">
+                        <h4>Best on Learning: use of Java</h4>
+                        <hr>
+                    </div>
+                    <div class="figure6">
+                        <img src="/Images/Book6.png" alt="Book4">
+                        <hr>
+                        <p>For serious programmers, Core Java, Volume I-Fundamentals, Eleventh Edition, is the
+                            definitive guide to writing robust, maintainable code. <br>
+                            > Cay Horstmann
+                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3><button class="myBtn">Buy Now</button></h3>
+                                </td>
+                                <td><span style="color: black; margin-left: 50px;">Price: $35</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="box7">
+                    <div class="title7">
+                        <h4>Best on Learning: C++ Programming</h4>
+                        <hr>
+                    </div>
+                    <div class="figure7">
+                        <img src="/Images/Book7.png" alt="Book4">
+                        <hr>
+                        <p>C++ Programming: An Object-Oriented Approach has two primary objectives: Teach the basic
+                            principles constructs of the C++ language. <br>
+                            > Behrouz A. Forouzan
+                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3><button class="myBtn">Buy Now</button></h3>
+                                </td>
+                                <td><span style="color: black; margin-left: 50px;">Price: $35</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="box8">
+                    <div class="title8">
+                        <h4>Best on Learning: Be Pro on PHP</h4>
+                        <hr>
+                    </div>
+                    <div class="figure8">
+                        <img src="/Images/Book8.png" alt="Book4">
+                        <hr>
+                        <p>
+                            Pro PHP : Patterns, Frameworks, Testing and More. It is compresive guide and also advances
+                            capibilities book for exprienced developers. <br>
+                            > Kevin McArthur
+
+                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3><button class="myBtn">Buy Now</button></h3>
+                                </td>
+                                <td><span style="color: black; margin-left: 50px;">Price: $35</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end product page -->
+        <div id="Contact">
+            <!-- start contact page -->
+            <!-- use inline css -->
+            <h1 style="margin-left: 200px; margin-top: 100px; color: rgb(105, 173, 173);">CONTACT <span
+                    style="color: rgb(24, 152, 195); font-size: 32px;">US</span> </h1>
+            <div class="item">
+                <div class="item1">
+                    <img src="/Images/logo1.jpg" alt="mobile logo">
+                    <h4>Phone numbers:</h4>
+                    <p>+9779823453421</p>
+                    <p>9723439921</p>
+                </div>
+                <div class="item2">
+                    <img src="/Images/logo2.png" alt="Logo of company">
+                    <h4>Company name:</h4>
+                    <p style="margin-left: 70px;">Imagine Bookstore</p>
+                    <h4 style="margin-left: 45px;">Registration number:</h4>
+                    <p>320135</p>
+                </div>
+                <div class="item3">
+                    <img src="/Images/logo3.png" alt="Logo of Address">
+                    <h4>Legal Address:</h4>
+                    <p>Khorsane Street, <br>
+                        <span style="color: #726666; font-size: 16px; margin-left: -20px;">Kerima Building,
+                            Office</span><br>
+                        <span style="color: #726666; font-size: 16px; margin-left: -20px;"> 102, R.H. 1197,
+                            Reliance,</span> <br>
+                        <span style="color: #726666; font-size: 16px; margin-left: 50px;">Cyprus</span>
+                    </p>
+                </div>
+            </div>
+            <form>
+                <div id="contactpage">
+                    <div class="contact">
+
+                        <div class="message">
+                            <h2><span style="font-size: 25px; color: #726666;">Send </span> <span
+                                    style="font-size: 25px; color: #cc6363;">us</span> <span
+                                    style="font-size: 25px; color: #561212;">message</span> </h2>
+                            <h4>Name </h4><br>
+                            <input type="text" placeholder="Name" class="Fname"> <br><br>
+                            <h4>Email </h4><br>
+                            <input type="text" placeholder="E-mail" class="Mail"><br><br>
+                            <h4>Contact Number</h4>
+                            <br> <input type="text" placeholder="Contact Number" class="Number"><br><br>
+                            <h4>Your Comment </h4><br>
+                            <textarea style="font-size: 18px; font-family: serif;" name="message for user"
+                                placeholder="Enter your message" id="message" cols="53" rows="8"></textarea><br>
+                            <p class="red"><input type="checkbox" style="height: 15px; width: 15px;"> By sending up, you
+                                agree our <b style="font-size: 13px; margin-left: 65px;">Terms, Data Policy and Cookies
+                                    <span style="margin-left:150px;font-size: 13px;color: #5d4242;">Policy.</span>
+                                </b>
+                            </p>
+                        </div>
+                        <div class="email-img">
+                            <img src="/Images/email.png" alt="E-mail Image">
+                        </div>
+                    </div>
+                    <div class="buttom">
+                        <button onclick="send()">
+                            <h4>Send messages</h4>
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="side">
+                        <div class="side1">
+                            <h3>Join the conversation:</h3><br>
+                            <li><img src="/Images/twiter.png" alt="Twiter"></li>
+                            <li><img src="/Images/youtube.png" alt="Youtube"></li>
+                            <li><img src="/Images/linkedin.png" alt="LinkedIn"></li>
+                        </div>
+                        <div class="side2">
+                            <h3>Contact:</h3><br>
+                            <p style="font-size: 20px; margin-top: 5px; margin-left: 0px;">+9779823781234 <br>
+                                <span>info@imagine-bookstore.org</span>
+                            </p>
+                        </div>
+                        <div class="side3">
+                            <h3>Certified:</h3><br>
+                            <li><img src="/Images/dmca.png" alt="dmca"></li>
+                            <li><img src="/Images/trustsite.png" alt="Trusted"></li>
+                            <li><img src="/Images/zerossl.png" alt="ZeroSSL"></li>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end contact page -->
+        <!-- footer section -->
+        <div class="Last">
+            <div class="prev">
+                <h3> <a href="About.html">
+                        <h3>About Us</h3>
+                    </a> </h3>
+                <p>Imagine Bookstore will starts to highlights digital innovation in the fast growing industry of
+                    ecommerce. </p>
+            </div>
+            <div class="play-pause">
+                <h3>What we are Building</h3>
+                <p>> zero-party data platform for shopify stores in nepal
+                    <span style="color: #0773b6;">(Octane AI)</span>
+                </p>
+            </div>
+            <div class="next">
+                <h3><a href="#Contact">
+                        <h3>Contact Us</h3>
+                    </a> </h3>
+                <p>
+                    <img src="/Images/message.png" alt="message logo"><span
+                        style="color: white; font-size: 16px; margin-left: 10px;">Send us a message</span><br>
+                    <img src="/Images/call.png" alt="call logo"> <span
+                        style="color: white; font-size: 16px; margin-left: 10px;">+9779823781234</span>
+                </p>
+            </div>
+        </div>
+        <!-- end footer content -->
+        <!-- content on last section of footer -->
+        <div class="footer">
+            <p>Copyright 2022 &copy; @imagine-bookstore.com</p>
+        </div>
+        <script>
+            // display message for send() function
+            function send() {
+                alert("Thank you for your message!");
+            }
+        </script>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+
+
+                <form>
+                    <div class="formcontent">
+                        <!-- start form page  -->
+                        <h2 style="margin-left:150px;">Please Send Us Your Details
+                        </h2>
+                        <div class="form">
+                            <div class="head1">
+                                First Name: <br>
+                                <input type="text" placeholder="First Name" id="Fname" class="Name"><br><br>
+                                Last Name: <br>
+                                <input type="text" placeholder="Last Name" id="Lname" class="Name"> <br><br>
+                                Contact No: <br>
+                                <input type="text" placeholder="Contact number" id="number" class="Numbers"><br><br>
+                                Debit and Credit Card: <br>
+                                <input type="text" placeholder="Card Number" id="Card" class="card num"><br><br>
+                            </div>
+                            <div class="head2">
+                                E-mail: <br>
+                                <input type="text" placeholder="E-mail" id="Email"><br><br>
+                                Address: <br>
+                                <input type="text" placeholder="Enter your Address" id="Address"> <br><br>
+                                <p>Pieces of Books:
+                                </p>
+                                <input type="number" name="Number" id="no of books"><br><br>
+                                <spans style="color: black;">Message:</span> <br>
+                                    <textarea name="message from user" placeholder="Enter your message" id="message"
+                                        cols="32" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <button onclick="Submit()">Submit</button>
+                    </div>
+                    <!-- end form page -->
+                </form>
+                <script>
+                    // message displayed for submit() function
+                    function Submit() {
+                        alert("Thank you for ordering with us");
+                        window.location.href = "E-commerce.html";
+                    }
+                </script>
+            </div>
+
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+
+
+            // Get the button that opens the modal
+            var btn = document.getElementsByClassName("myBtn");
+
+
+            for (var i = 0; i < btn.length; i++) {
+                btn[i].addEventListener("click", function () {
+                    modal.style.display = "block";
+                    document.body.style.overflowY = "hidden";
+                });
+            }
+
+
+            console.log(btn)
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+                document.body.style.overflowY = "";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflowY = "";
+                }
+            }
+        </script>
+</body>
+
+</html>

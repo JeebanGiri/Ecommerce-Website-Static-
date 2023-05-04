@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce site/Order the Books" />
+    <meta http-equiv="Referesh" content="4">
+    <title>Order Us</title>
+     <!-- External css -->
+    <link rel="stylesheet" href="../Css/Order.css">
+    <style>
+        /* internal css */
+        img {
+            margin: 20px 70px 0px 20px;
+            height: 70px;
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div id="formcontent">
+            <div class="book-img">
+                <img src="/Images/logo2.png" alt="Logo of book">
+            </div>
+            <h2>Please Send Us Your Details</h2>
+            <div class="form">
+                <div class="head1">
+                    First Name: <br>
+                    <input type="text" placeholder="First Name" id="Fname" class="Name"><br><br>
+                    Last Name: <br>
+                    <input type="text" placeholder="Last Name" id="Lname" class="Name"> <br><br>
+                    Contact No: <br>
+                    <input type="text" placeholder="Contact number" id="number" class="Numbers"><br><br>
+                    Debit and Credit Card: <br>
+                    <input type="text" placeholder="Card Number" id="Card" class="card num"><br><br>
+
+                </div>
+                <div class="head2">
+                    E-mail: <br>
+                    <input type="text" placeholder="E-mail" id="Email"><br><br>
+                    Address: <br>
+                    <input type="text" placeholder="Enter your Address" id="Address"> <br><br>
+                    <p>Pieces of Books: 
+                    </p> 
+                    <input type="number" name="Number" id="no of books"><br><br>
+                    <span>Message:</span>   <br>
+                    <textarea name="message from user" placeholder="Enter your message" id="message" cols="32"
+                        rows="3"></textarea>
+                </div>
+            </div>
+            <button onclick="Submit()">Submit</button>
+        </div>
+    </form>
+    <script>
+        function Submit(){
+            alert("Thank you for ordering with us");
+            window.location.href="#Contact";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+/* external css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #ebf3fc;
+}
+.header{
+    display:flex ;
+    background-color: lightgray;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    margin-top: -100px;
+}
+.header ul{
+    display: flex;
+    margin-left: 250px;
+    padding-top: 23px;
+     
+}
+.header li{
+    list-style: none;
+    padding: 0px 25px;
+}
+a{
+    text-decoration: none;
+    color: #2f2b2b;
+    font-size: 14px;
+}
+a:hover{
+    color: white;
+}
+nav li button{
+    height: 37px;
+    width: 100px;
+    background-color: #319be7;
+    border-radius: 5px;
+    border: 1px solid #319be7; 
+    margin-top: -10px;
+    cursor: pointer;
+    margin-left: 0px;
+}
+.Firstbox{
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    margin-left: 500px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+.Firstbox img{
+     margin: 30px 40px 0px 30px; 
+}
+.Firstbox h3{
+    margin-left: 40px;
+}
+.Firstbox input{
+    height: 35px;
+    width: 350px;
+    margin-left: 40px;
+    margin-top: 13px;
+    color: #5d5656;
+    margin-bottom: -5px;
+}
+.top{
+    margin-left: 40px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+.top:hover{
+    color: red;
+    cursor: pointer;
+}
+.top:active{
+    color: aqua;
+}
+.buttom span a:hover{
+    color: red;
+}
+.Firstbox button{
+    height: 43px;
+    width: 350px;
+    margin-left: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: red;
+    cursor: pointer;
+}
+.Firstbox button:hover{
+    color: white;
+}
+.Firstbox button:active{
+    color: black;
+}
+.Secondbox{
+    height: 70px;
+    width: 450px;
+    margin-left: 500px;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 20px;
+}
+#jeeban, #jeeban1{
+    height: 19px;
+    padding-top: 5px;
+    margin-left: 40px;
+    font-size: 13px;
+}
+.buttom{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+}
+.paragraph {
+    color: #857979;
+   padding-left: 20px; 
+   padding-top: 20px;
+}
+.footer img{
+    margin-left: 400px;
+    margin-top: -90px;
+}
