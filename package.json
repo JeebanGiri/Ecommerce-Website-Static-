@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce-website-static-",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeebanGiri/Ecommerce-Website-Static-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeebanGiri/Ecommerce-Website-Static-/issues"
+  },
+  "homepage": "https://github.com/JeebanGiri/Ecommerce-Website-Static-#readme",
+  "description": ""
+}
