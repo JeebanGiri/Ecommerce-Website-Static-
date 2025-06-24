@@ -1,6 +1,10 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/Html/E-commerce.html" }
+    { "source": "/", "destination": "/Html/E-commerce.html" },
+    { "source": "/about", "destination": "/Html/About.html" },
+    { "source": "/buy", "destination": "/Html/Buy.html" },
+    { "source": "/login", "destination": "/Html/Login.html" },
+    { "source": "/signup", "destination": "/Html/Signup.html" }
   ]
 }
